@@ -258,47 +258,29 @@ p {
   outline: none;
   background-color: #bc3434;
 }
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #1a1919;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  top: 100%;
-  left: 0;  
-  z-index: 1000;
-  border: none;
-}
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-.row{
- margin-right: -600px;
-  
-} 
-#doc{
- margin-left: 60px;
+
+#doc {
+  margin-left: 60px;
   margin-top: 24px;
   width: 150px;
   height: 120px;
 }
-#pws{
+#pws {
   margin-top: 22px;
   width: 140px;
   height: 120px;
   margin-left: 60px;
 }
-#botao-personalizado{
+#botao-personalizado {
   background-color: #5e5858;
   border: none;
 }
-#botao-personalizado:hover{
+#botao-personalizado:hover {
   cursor: pointer;
   transition: all 0.2s ease-in;
   background-color: #bc3434;
 }
-.card{
+.card {
   border-top-right-radius: 50px;
   border: none;
   background-color: #141414;
@@ -317,7 +299,7 @@ p {
     margin-bottom: 15px;
   }
   .bg-img {
-    height: 200vh;
+    height: 220vh;
     width: 100vw;
   }
   .form-container {
@@ -327,7 +309,7 @@ p {
     height: 400px;
   }
   .overlay {
-    height: 200vh;
+    height: 240vh;
   }
 }
 
