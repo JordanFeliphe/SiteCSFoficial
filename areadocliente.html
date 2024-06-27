@@ -27,8 +27,8 @@
       </div>
 
     </div>
-    <div class="overlay"></div>
-   <img  class="bg-img"    src="./src/img/businessman-2606509_1280.webp" alt="bg-img"> 
+    <div class="overlay" id="overlay-cliente"></div>
+   <img  class="bg-img"    src="./src/img/feliz-candidato-do-sexo-masculino-aperto-de-mao-com-um-gerente-apos-uma-entrevista-de-emprego-bem-sucedida-no-escritorio.jpg" alt="bg-img"> 
     <nav class="navbar navbar-expand-lg  col-12 ">
       <div class="container">
         <!-- Imagem alinhada à esquerda -->
@@ -57,12 +57,46 @@
           class="collapse navbar-collapse justify-content-end"
           id="navbarSupportedContent"
         >
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="index.html"
-                >Home</a
-              > 
-            </li>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " act aria-current="page" href="index.html"
+              >Home</a
+            > 
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            > 
+              Serviços
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="./vendaselocacoes.html"
+                  >Vendas e Locações</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./assistenciatecnica.html">Assistência técnica</a>
+              </li>
+              <li><a class="dropdown-item" href="./processosged.html">Processo de GED</a></li>
+              <li>
+                <a class="dropdown-item" href="./gerenciamento.html"
+                  >Gerenciamento Impressão e cópia</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./impressaocomdadosvariaveis.html">Impressão com variáveis</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./divisaografica.html"
+                  >Divisão gráfica (Serviços internos)</a
+                >
+              </li>
+            </ul>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -71,82 +105,44 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               > 
-                Serviços
+                Intranet
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="./vendaselocacoes.html"
-                    >Vendas e Locações</a
+                  <a class="dropdown-item" href="https://www.csfdigital.com.br/hesk/" target="_blank"
+                    >Hesk</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./assistenciatecnica.html">Assistência técnica</a>
-                </li>
-                <li><a class="dropdown-item" href="./processosged.html">Processo de GED</a></li>
-                <li>
-                  <a class="dropdown-item" href="./gerenciamento.html"
-                    >Gerenciamento Impressão e cópia</a
-                  >
+                  <a class="dropdown-item" href="http://ws.csfdigital.corp:9292/Account/Login.aspx?ReturnUrl=%2f" target="_blank">PPS (Interno)</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./impressaocomdadosvariaveis.html">Impressão com variáveis</a>
+                  <a class="dropdown-item" href="http://177.19.130.212:9292/Account/Login.aspx?ReturnUrl=%2" target="_blank">PPS (Externo)</a>
                 </li>
-                <li>
-                  <a class="dropdown-item" href="./divisaografica.html"
-                    >Divisão gráfica (Serviços internos)</a
-                  >
-                </li>
+                <li><a class="dropdown-item" href="http://db02.csfdigital.corp:8484/reports/browse/" target="_blank">Report(Interno)</a></li>
+                <li><a class="dropdown-item" href="http://177.19.130.212:8484/reports/browse/" target="_blank">Report(Externo)</a></li>
               </ul>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                > 
-                  Intranet
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="https://www.csfdigital.com.br/hesk/" target="_blank"
-                      >Hesk</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="http://ws.csfdigital.corp:9292/Account/Login.aspx?ReturnUrl=%2f" target="_blank">PPS (Interno)</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="http://177.19.130.212:9292/Account/Login.aspx?ReturnUrl=%2" target="_blank">PPS (Externo)</a>
-                  </li>
-                  <li><a class="dropdown-item" href="http://db02.csfdigital.corp:8484/reports/browse/" target="_blank">Report(Interno)</a></li>
-                  <li><a class="dropdown-item" href="http://177.19.130.212:8484/reports/browse/" target="_blank">Report(Externo)</a></li>
-                </ul>
-              </li>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contato.html">Contato</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="./areadocliente.html"
-    
-                >Área do cliente</a
-              >
-            </li>
-           
-
-            <li class="nav-item">
-              <a href="./contato.html"><button type="button" class="btn btn-outline-danger">
-                Contratar serviços
-              </button></a>
-              
-            </li>
-          </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contato.html">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="./areadocliente.html"
+              >Área do cliente</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./contato.html"><button type="button" class="btn btn-outline-danger">
+              Contratar serviços
+            </button></a>
+          </li>
+        </ul>
         </div>
       </div>
     </nav>
@@ -161,14 +157,14 @@
           <p class="lead text-muted text-md-start text-justify col-12">
             A área do cliente em nossa página web oferece acesso rápido a portais essenciais para abrir chamados, analisar impressoras, verificar consumíveis e muito mais. Simplifique suas tarefas diárias e gerencie tudo de forma eficiente em um único lugar.  </p>
             <div class="container">
-                <div class="row">
+                <div class="row" id="cards-personalizados">
                     <div class="col-md-3">
                         <div class="card" style="width: 18rem;">
                             <img src="./src/img/logo_doc.png" class="card-img-top" alt="..." id="doc">
                             <div class="card-body">
                                 <h5 class="card-title">Doc MPS</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary" id="botao-personalizado">Vá para o DOC MPS</a>
+                                <p class="card-text">O DocService é uma plataforma inovadora que facilita a criação, gestão e compartilhamento de documentos de maneira eficiente e segura, promovendo a colaboração e a produtividade nas organizações.</p>
+                                <a href="https://mps.doc360.com.br/login/index.php" target="_blank" class="btn btn-primary" id="botao-personalizado">Vá para o DOC MPS</a>
                             </div>
                         </div>
                     </div>
@@ -177,8 +173,8 @@
                             <img src="./src/img/logo_doc_pja.png" class="card-img-top" alt="..."id="doc">
                             <div class="card-body">
                                 <h5 class="card-title">Doc PJA</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary" id="botao-personalizado">Vá para o DOC MPS PJA</a>
+                                <p class="card-text">O Doc Service PJA é um sistema especializado na contabilização dos trabalhos de impressão, cópia e outros serviços relacionados, oferecendo uma solução eficiente para o controle e monitoramento de atividades.</p>
+                                <a href="https://pja2.doc360.com.br/login/" target="_blank"  class="btn btn-primary" id="botao-personalizado">Vá para o DOC MPS PJA</a>
                             </div>
                         </div>
                     </div>
@@ -187,8 +183,8 @@
                             <img src="./src/img/Logo-NDD-Padrao-1-1024x512.webp" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">NDD 360</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary" id="botao-personalizado">Vá para o NDD MPS</a>
+                                <p class="card-text">O NDD Print 360 é uma solução abrangente da NDD para a gestão de serviços de impressão. Ele oferece monitoramento em tempo real, relatórios detalhados, controle de custos e suporte proativo. </p>
+                                <a href="https://360.nddprint.com/login/company" target="_blank" class="btn btn-primary" id="botao-personalizado">Vá para o NDD MPS</a>
                                 
                             </div>
                         </div>
@@ -198,8 +194,8 @@
                             <img src="./src/img/PWS_logo.png" class="card-img-top" alt="..." id="pws">
                             <div class="card-body">
                                 <h5 class="card-title">PWS</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary" id="botao-personalizado">Vá para o PWS</a>
+                                <p class="card-text">O Portal Web de Serviços (PWS) da Softilux simplifica a abertura de chamados, solicitação de serviços e acesso a informações para os clientes, garantindo uma interação eficiente e direta com a equipe de suporte.</p>
+                                <a href="https://psfx.com.br/pws/index.php/pws" target="_blank" class="btn btn-primary" id="botao-personalizado">Vá para o PWS</a>
                             </div>
                         </div>
                     </div>
