@@ -376,6 +376,75 @@ textarea {
     height: 0vh;
     width: 100%;
   }
+  .card {
+    margin-left: -18px;
+  }
+}
+
+@media (max-width: 414px) {
+  .footer-col {
+    width: 100%;
+  }
+  .btn {
+    margin-bottom: 15px;
+  }
+  .bg-img {
+    height: 240vh;
+    width: 100%;
+  }
+  .form-container {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 350px;
+    height: 400px;
+  }
+  #overlay-cliente {
+    height: 400vh;
+  }
+  #bg-img-cliente {
+    height: 340vh;
+    width: 100%;
+  }
+  .card {
+    margin-left: 25px;
+  }
+  .overlay {
+    width: 100%;
+    height: 200vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer-col {
+    width: 100%;
+  }
+  .btn {
+    margin-bottom: 15px;
+  }
+  .bg-img {
+    height: 250vh;
+    width: 100%;
+  }
+  .form-container {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 350px;
+    height: 400px;
+  }
+  #overlay-cliente {
+    height: 460vh;
+  }
+  #bg-img-cliente {
+    height: 340vh;
+    width: 100%;
+  }
+  .card {
+    margin-left: 15px;
+  }
+  .overlay {
+    width: 100%;
+    height: 200vh;
+  }
 }
 
 @media (max-width: 360px) {
@@ -386,7 +455,7 @@ textarea {
     margin-bottom: 15px;
   }
   .bg-img {
-    height: 230vh;
+    height: 250vh;
     width: 100%;
   }
   .form-container {
@@ -394,5 +463,52 @@ textarea {
     margin-left: 10px;
     width: 350px;
     height: 400px;
+  }
+  #overlay-cliente {
+    height: 460vh;
+  }
+  #bg-img-cliente {
+    height: 340vh;
+    width: 100%;
+  }
+  .card {
+    margin-left: 15px;
+  }
+  .overlay {
+    width: 100%;
+    height: 220vh;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer-col {
+    width: 100%;
+  }
+  .btn {
+    margin-bottom: 15px;
+  }
+  .bg-img {
+    height: 290vh;
+    width: 100%;
+  }
+  .form-container {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 350px;
+    height: 400px;
+  }
+  #overlay-cliente {
+    height: 460vh;
+  }
+  #bg-img-cliente {
+    height: 550vh;
+    width: 100%;
+  }
+  .card {
+    margin-left: -15px;
+  }
+  .overlay {
+    width: 100%;
+    height: 300vh;
   }
 }
