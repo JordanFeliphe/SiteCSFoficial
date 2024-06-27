@@ -166,7 +166,7 @@ p {
 }
 
 .bg-img {
-  height: 120vh;
+  height: 170vh;
   width: 100vw;
   object-fit: cover;
   position: absolute;
@@ -179,7 +179,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 110vh;
+  height: 115vh;
   pointer-events: none;
   z-index: -1;
   background: linear-gradient(
@@ -310,6 +310,36 @@ textarea {
   background-color: #0000009c;
   border: none;
 }
+@media (max-width: 1920px) {
+  .bg-img {
+    height: 120vh;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+  .overlay {
+    width: 100%;
+    height: 120vh;
+  }
+}
+@media (max-width: 1600px) {
+  .bg-img {
+    height: 170vh;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+  .overlay {
+    width: 100%;
+    height: 150vh;
+  }
+}
 @media screen and (max-width: 982px) {
   .mt-personalizada {
     margin-top: 0px;
@@ -340,10 +370,10 @@ textarea {
     margin-left: 30px;
   }
   #overlay-cliente {
-    height: 300vh;
+    height: 350vh;
   }
   #bg-img-cliente {
-    height: 290vh;
+    height: 0vh;
     width: 100%;
   }
 }
