@@ -166,7 +166,7 @@ p {
 }
 
 .bg-img {
-  height: 130vh;
+  height: 120vh;
   width: 100vw;
   object-fit: cover;
   position: absolute;
@@ -179,7 +179,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 180vh;
+  height: 110vh;
   pointer-events: none;
   z-index: -1;
   background: linear-gradient(
@@ -324,8 +324,8 @@ textarea {
     margin-bottom: 15px;
   }
   .bg-img {
-    height: 290vh;
-    width: 100vw;
+    height: 220vh;
+    width: 100%;
   }
   .form-container {
     margin-top: 50px;
@@ -334,10 +334,17 @@ textarea {
     height: 400px;
   }
   .overlay {
-    height: 290vh;
+    height: 180vh;
   }
   .card {
     margin-left: 30px;
+  }
+  #overlay-cliente {
+    height: 300vh;
+  }
+  #bg-img-cliente {
+    height: 290vh;
+    width: 100%;
   }
 }
 
