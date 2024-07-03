@@ -51,9 +51,11 @@ h3 {
 span.num {
   color: #ffffff;
 }
-
+span {
+  color: #bc3434;
+}
 .spinner-wrapper {
-  background-color: #bc3434;
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   width: 100%;
@@ -428,7 +430,7 @@ textarea {
 }
 @media (max-width: 1536px) {
   .bg-img {
-    height: 170vh;
+    height: 140vh;
     width: 100vw;
     object-fit: cover;
     position: absolute;
