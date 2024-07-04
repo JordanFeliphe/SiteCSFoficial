@@ -11,9 +11,17 @@ body {
   line-height: 1.5;
   font-family: "Kozuka Gothic Pro 300", sans-serif;
 }
-h3 {
-  color: whi;
+#btn-dangerr{
+  background-color: #000000f0;
+  color: #bc3434;
 }
+#btn-dangerr:hover{
+  background-color: #bc3434;
+  color: #fdfdfd;
+  transition: all 0.8s ease;
+  
+}
+
 .wrapper {
   border: 1px solid white;
   position: absolute;
@@ -29,6 +37,10 @@ h3 {
   background-position: center center;
 }
 #imgsection2 {
+  background-size: cover;
+  background-position: center center;
+}
+#imgvenda1{
   background-size: cover;
   background-position: center center;
 }
@@ -51,9 +63,7 @@ h3 {
 span.num {
   color: #ffffff;
 }
-span {
-  color: #bc3434;
-}
+
 .spinner-wrapper {
   background-color: #ffffff;
   position: fixed;
@@ -206,7 +216,9 @@ p {
   color: #bc3434;
   background-color: whitesmoke;
 }
-
+span{
+  color: #bc3434;
+}
 .bg-img {
   height: 170vh;
   width: 100vw;
@@ -222,6 +234,14 @@ p {
 }
 #overlay-index {
   height: 100vh;
+  width: 100vw;
+}
+#imgivendas{
+  height: 110vh;
+  width: 100vw;
+}
+#overlay-vendas {
+  height: 110vh;
   width: 100vw;
 }
 .overlay {
