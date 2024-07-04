@@ -1,333 +1,244 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-bs-theme="dark">
-  <head>
-    <meta charset="UTF-8" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSF Digital - Soluções de impressão</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./src/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="./src/js/scripts.js">
-    <link rel="icon" type="image/png" href="./src/img/2c6f69bdf78de3fd1f47fe4231280559-_1_.ico">
-  </head>
 
-  <body>
-    <div class="spinner-wrapper">
-      <div class="spinner-border text-light" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>CSF Digital - Soluções de impressão</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+	<link rel="stylesheet" href="./src/css/style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" href="./src/js/scripts.js">
+	<link rel="icon" type="image/png" href="./src/img/2c6f69bdf78de3fd1f47fe4231280559-_1_.ico">
+</head>
 
-    </div>
-    <div class="overlay" id="overlay-cliente"></div>
-   <img  class="bg-img" id="bg-img-cliente"   src="./src/img/feliz-candidato-do-sexo-masculino-aperto-de-mao-com-um-gerente-apos-uma-entrevista-de-emprego-bem-sucedida-no-escritorio.jpg" alt="bg-img"> 
-    <nav class="navbar navbar-expand-lg  col-12 ">
-      <div class="container">
-        <!-- Imagem alinhada à esquerda -->
-        <a class="navbar-brand" href="./index.html">
-          <img
-            src="./src/img/logo_black.webp"
-            class="img-fluid mt-3"
-            alt="csf"
-            width="170px"
-            height="120px"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Itens de navegação alinhados à direita -->
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarSupportedContent"
-        >
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link " act aria-current="page" href="index.html"
-              >Home</a
-            > 
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            > 
-              Serviços
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="./vendaselocacoes.html"
-                  >Vendas e Locações</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="./assistenciatecnica.html">Assistência técnica</a>
-              </li>
-              <li><a class="dropdown-item" href="./processosged.html">Processo de GED</a></li>
-              <li>
-                <a class="dropdown-item" href="./gerenciamento.html"
-                  >Gerenciamento Impressão e cópia</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="./impressaocomdadosvariaveis.html">Impressão com variáveis</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./divisaografica.html"
-                  >Divisão gráfica (Serviços internos)</a
-                >
-              </li>
-            </ul>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              > 
-                Intranet
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="https://www.csfdigital.com.br/hesk/" target="_blank"
-                    >Hesk</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="http://ws.csfdigital.corp:9292/Account/Login.aspx?ReturnUrl=%2f" target="_blank">PPS (Interno)</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="http://177.19.130.212:9292/Account/Login.aspx?ReturnUrl=%2" target="_blank">PPS (Externo)</a>
-                </li>
-                <li><a class="dropdown-item" href="http://db02.csfdigital.corp:8484/reports/browse/" target="_blank">Report(Interno)</a></li>
-                <li><a class="dropdown-item" href="http://177.19.130.212:8484/reports/browse/" target="_blank">Report(Externo)</a></li>
-              </ul>
-            </li>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contato.html">Contato</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="./areadocliente.html"
-              >Área do cliente</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="./contato.html"><button type="button" class="btn btn-danger btn-lg" >
-              Contratar serviços
-            </button></a>
-          </li>
-        </ul>
-        </div>
-      </div>
-    </nav>
-    
-    <header class="container mt-3" >
-        <div class="col-12 col-lg-6 order-lg-1 ml-5">
-          <div class="mt-personalizada">
-            <h1 class="text-center text-md-start">
-              Bem vindo a área do <b><span class="text">cliente!</span></b>
-            </h1>
-          </div>
-          <p class="lead text-muted text-md-start text-justify col-12 ">
-            A área do cliente em nossa página web oferece acesso rápido a portais essenciais para abrir chamados, analisar impressoras, verificar consumíveis e muito mais. Simplifique suas tarefas diárias e gerencie tudo de forma eficiente em um único lugar.  </p>
-            <div class="container">
-                <div class="row" id="cards-personalizados">
-                    <div class="col-md-3">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./src/img/logo_doc.png" class="card-img-top" alt="..." id="doc">
-                            <div class="card-body">
-                                <h5 class="card-title">Doc MPS</h5>
-                                <p class="card-text">O DocService é uma plataforma inovadora que facilita a criação, gestão e compartilhamento de documentos de maneira eficiente e segura, promovendo a colaboração e a produtividade nas organizações.</p>
-                                <a href="https://mps.doc360.com.br/login/index.php" target="_blank" class="btn btn-primary" id="botao-docmps">Vá para o DOC MPS</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./src/img/logo_doc_pja.png" class="card-img-top" alt="..."id="doc">
-                            <div class="card-body">
-                                <h5 class="card-title">Doc PJA</h5>
-                                <p class="card-text">O Doc Service PJA é um sistema especializado na contabilização dos trabalhos de impressão, cópia e outros serviços relacionados, oferecendo uma solução eficiente para o controle e monitoramento de atividades.</p>
-                                <a href="https://pja2.doc360.com.br/login/" target="_blank"  class="btn btn-primary" id="botao-docmpspja">Vá para o DOC MPS PJA</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./src/img/Logo-NDD-Padrao-1-1024x512.webp" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">NDD 360</h5>
-                                <p class="card-text">O NDD Print 360 é uma solução abrangente da NDD para a gestão de serviços de impressão. Ele oferece monitoramento em tempo real, relatórios detalhados, controle de custos e suporte proativo. </p>
-                                <a href="https://360.nddprint.com/login/company" target="_blank" class="btn btn-primary" id="botao-ndd">Vá para o NDD MPS</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./src/img/PWS_logo.png" class="card-img-top" alt="..." id="pws">
-                            <div class="card-body">
-                                <h5 class="card-title">PWS</h5>
-                                <p class="card-text">O Portal Web de Serviços (PWS) da Softilux simplifica a abertura de chamados, solicitação de serviços e acesso a informações para os clientes, garantindo uma interação eficiente e direta com a equipe de suporte.</p>
-                                <a href="https://psfx.com.br/pws/index.php/pws" target="_blank" class="btn btn-primary" id="botao-pws">Vá para o PWS</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-         
-        
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        </div>
-      </div>
-    </header>
-    <section id="about" class="about-section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-12 col-12">
-            <div class="about-img">
-              <img src="" alt="" class="img-fluid">
-            </div>
+<body>
+	<div class="spinner-wrapper">
+		<div class="spinner-border text-light" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div>
+	</div>
+	<div class="overlay" id="overlay-cliente"></div>
+	<img class="bg-img" id="bg-img-cliente" src="./src/img/feliz-candidato-do-sexo-masculino-aperto-de-mao-com-um-gerente-apos-uma-entrevista-de-emprego-bem-sucedida-no-escritorio.jpg" alt="bg-img">
+	<nav class="navbar navbar-expand-lg  col-12 ">
+		<div class="container">
+			<!-- Imagem alinhada à esquerda -->
+			<a class="navbar-brand" href="./index.html">
+				<img src="./src/img/logo_black.webp" class="img-fluid mt-3" alt="csf" width="170px" height="120px" />
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- Itens de navegação alinhados à direita -->
+			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+				<ul class="navbar-nav mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link " act aria-current="page" href="index.html">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Serviços </a>
+						<ul class="dropdown-menu">
+							<li>
+								<a class="dropdown-item" href="./vendaselocacoes.html">Vendas e Locações</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="./assistenciatecnica.html">Assistência técnica</a>
+							</li>
+							<li><a class="dropdown-item" href="./processosged.html">Processo de GED</a></li>
+							<li>
+								<a class="dropdown-item" href="./gerenciamento.html">Gerenciamento Impressão e cópia</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="./impressaocomdadosvariaveis.html">Impressão com variáveis</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="./divisaografica.html">Divisão gráfica (Serviços internos)</a>
+							</li>
+						</ul>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Intranet </a>
+						<ul class="dropdown-menu">
+							<li>
+								<a class="dropdown-item" href="https://www.csfdigital.com.br/hesk/" target="_blank">Hesk</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="http://ws.csfdigital.corp:9292/Account/Login.aspx?ReturnUrl=%2f" target="_blank">PPS (Interno)</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="http://177.19.130.212:9292/Account/Login.aspx?ReturnUrl=%2" target="_blank">PPS (Externo)</a>
+							</li>
+							<li><a class="dropdown-item" href="http://db02.csfdigital.corp:8484/reports/browse/" target="_blank">Report(Interno)</a></li>
+							<li><a class="dropdown-item" href="http://177.19.130.212:8484/reports/browse/" target="_blank">Report(Externo)</a></li>
+						</ul>
+					</li>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sobre</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./contato.html">Contato</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./areadocliente.html">Área do cliente</a>
+					</li>
+					<li class="nav-item">
+						<a href="./contato.html"><button type="button" class="btn btn-danger btn-lg" id="btn-dangerr"> Contratar serviços </button></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<header class="container mt-3">
+		<div class="col-12 col-lg-6 order-lg-1 ml-5">
+			<div class="mt-personalizada">
+				<h1 class="text-center text-md-start"> Bem vindo a área do <b><span class="text">cliente!</span></b>
+				</h1>
+			</div>
+			<p class="lead text-muted text-md-start text-justify col-12 "> A área do cliente em nossa página web oferece acesso rápido a portais essenciais para abrir chamados, analisar impressoras, verificar consumíveis e muito mais. Simplifique suas tarefas diárias e gerencie tudo de forma eficiente em um único lugar. </p>
+			<div class="container">
+				<div class="row" id="cards-personalizados">
+					<div class="col-md-3">
+						<div class="card" style="width: 18rem;">
+							<img src="./src/img/logo_doc.png" class="card-img-top" alt="..." id="doc">
+							<div class="card-body">
+								<h5 class="card-title">Doc MPS</h5>
+								<p class="card-text">O DocService é uma plataforma inovadora que facilita a criação, gestão e compartilhamento de documentos de maneira eficiente e segura, promovendo a colaboração e a produtividade nas organizações.</p>
+								<a href="https://pc.doc360.com.br/login/" target="_blank" class="btn btn-primary" id="botao-docmps">Vá para o DOC MPS</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card" style="width: 18rem;">
+							<img src="./src/img/logo_doc_pja.png" class="card-img-top" alt="..." id="doc">
+							<div class="card-body">
+								<h5 class="card-title">Doc PJA</h5>
+								<p class="card-text">O Doc Service PJA é um sistema especializado na contabilização dos trabalhos de impressão, cópia e outros serviços relacionados, oferecendo uma solução eficiente para o controle e monitoramento de atividades.</p>
+								<a href="https://pja2.doc360.com.br/login/" target="_blank" class="btn btn-primary" id="botao-docmpspja">Vá para o DOC MPS PJA</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card" style="width: 18rem;">
+							<img src="./src/img/Logo-NDD-Padrao-1-1024x512.webp" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">NDD 360</h5>
+								<p class="card-text">O NDD Print 360 é uma solução abrangente da NDD para a gestão de serviços de impressão. Ele oferece monitoramento em tempo real, relatórios detalhados, controle de custos e suporte proativo. </p>
+								<a href="https://360.nddprint.com/login/company" target="_blank" class="btn btn-primary" id="botao-ndd">Vá para o NDD MPS</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card" style="width: 18rem;">
+							<img src="./src/img/PWS_logo.png" class="card-img-top" alt="..." id="pws">
+							<div class="card-body">
+								<h5 class="card-title">PWS</h5>
+								<p class="card-text">O Portal Web de Serviços (PWS) da Softilux simplifica a abertura de chamados, solicitação de serviços e acesso a informações para os clientes, garantindo uma interação eficiente e direta com a equipe de suporte.</p>
+								<a href="https://psfx.com.br/pws/index.php/pws" target="_blank" class="btn btn-primary" id="botao-pws">Vá para o PWS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+		</div>
+	</header>
+	<section id="about" class="about-section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-12 col-12">
+					<div class="about-img">
+						<img src="" alt="" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container-footer">
+			<div class="row">
+				<div class="footer-col">
+					<h4>CSF Digital - São Luís</h4>
+					<ul>
+						<li><a href="mailto:comercial@csfdigital.com.br"><i class="fa-solid fa-envelope"></i>comercial@csfdigital.com.br</a></li>
+						<li><a href="#"><i class="fa-solid fa-phone"></i>(98) 3301-2400</a></li>
+						<li><a href="#"><i class="fa-solid fa-clock"></i>08:00 às 12:30 | 13:30 às 18:00</a></li>
+						<li><a href="https://maps.app.goo.gl/wSM857DbcmVR6btE9" target="_blank"><i class="fa-solid fa-location-dot"></i>Av. dos Holandeses, Qda. 32, Nº 1, Ed. Praia Shopping | Loja 12, pavimento superior, - Calhau, São Luís-MA, Cep: 65071-380</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>CSF Digital - Fortaleza</h4>
+					<ul>
+						<li><a href="mailto:comercial@csfdigital.com.br"><i class="fa-solid fa-envelope"></i>comercial@csfdigital.com.br</a></li>
+						<li><a href="#"><i class="fa-solid fa-phone"></i>(85) 3022-0900</a></li>
+						<li><a href="#"><i class="fa-solid fa-clock"></i>08:00 às 12:30 | 13:30 às 18:00</a></li>
+						<li><a href="https://maps.app.goo.gl/uNtnCF7mnA9jyPDcA" target="_blank"><i class="fa-solid fa-location-dot"></i>Rua Raimundo Oliveira Filho, Nº 332 - Papicu, Fortaleza-CE. CEP: 60175-175</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Menu</h4>
+					<ul>
+						<li><a href="./index.html">Home</a></li>
+						<li><a href="#">Sobre</a></li>
+						<li><a href="./contato.html">Contato</a></li>
+						<li><a href="https://psfx.com.br/pws/index.php/pws">Portal do cliente</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Redes sociais</h4>
+					<div class="social-links">
+						<a href="https://pt-br.facebook.com/csfdigital/" target="_blank"><i class="fa-brands fa-facebook" id="social-icons"></i></a>
+						<a href="https://www.instagram.com/csfdigital/" target="_blank"><i class="fa-brands fa-instagram" id="social-icons"></i></a>
+						<a href="https://br.linkedin.com/company/csfdigital" target="_blank"><i class="fa-brands fa-linkedin" id="social-icons"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<article onclick="backTop();">
+			<button class="scrollTop">
+				<img src="./src/img/seta-para-cima.png" alt="">
+			</button>
+		</article>
+		<hr>
+		<div class="text-center mt-5" id="copyright">
+			<p>&copy; Copyright 2024 <a href="./index.html">CSF Digital.</a>Todos Os Direitos Reservados. Powered by Jordan Feliphe.</p>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script>
+		window.addEventListener('scroll',function(){
+		  let scroll=document.querySelector('.scrollTop')
+		    scroll.classList.toggle('active',window.scrollY>450)
+		})
+		function backTop(){
+		
+		  window.scrollTo({
+		    top:0,
+		    behavior:'smooth'
+		  })
+		}
+	</script>
+	<script>
+		const spinnerWrapperEl = document.querySelector(".spinner-wrapper");
+		     window.addEventListener('load',() => {
+		spinnerWrapperEl.style.opacity = '0';
+		setTimeout(()=>{
+		  spinnerWrapperEl.style.display = 'none'
+		},200);
+		     });
+		
+		     
+		
+	</script>
+</body>
 
-          </div>
-        </div>
-      </div>
-
-    </section>
-    
-
-    <footer class="footer" >
-      <div class="container-footer">
-        <div class="row">
-          <div class="footer-col"> 
-            <h4>CSF Digital - São Luís</h4>
-            <ul>
-              <li><a href="mailto:comercial@csfdigital.com.br"><i class="fa-solid fa-envelope"></i>comercial@csfdigital.com.br</a></li>
-              <li><a href="#"><i class="fa-solid fa-phone"></i>(98) 3301-2400</a></li>
-              <li><a href="#"><i class="fa-solid fa-clock"></i>08:00 às 12:30 | 13:30 às 18:00</a></li>
-              <li><a href="https://maps.app.goo.gl/wSM857DbcmVR6btE9" target="_blank"><i class="fa-solid fa-location-dot"></i>Av. dos Holandeses, Qda. 32, Nº 1, Ed. Praia Shopping | Loja 12, pavimento superior, - Calhau, São Luís-MA, Cep: 65071-380</a></li>
-            </ul>
-          </div>
-          <div class="footer-col"> 
-            <h4>CSF Digital - Fortaleza</h4>
-            <ul>
-              <li><a href="mailto:comercial@csfdigital.com.br"><i class="fa-solid fa-envelope"></i>comercial@csfdigital.com.br</a></li>
-              <li><a href="#"><i class="fa-solid fa-phone"></i>(85) 3022-0900</a></li>
-              <li><a href="#"><i class="fa-solid fa-clock"></i>08:00 às 12:30 | 13:30 às 18:00</a></li>
-              <li><a href="https://maps.app.goo.gl/uNtnCF7mnA9jyPDcA" target="_blank"><i class="fa-solid fa-location-dot"></i>Rua Raimundo Oliveira Filho, Nº 332 - Papicu, Fortaleza-CE. CEP: 60175-175</a></li>
-            </ul>
-          </div>
-          <div class="footer-col"> 
-            <h4>Menu</h4>
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="./contato.html">Contato</a></li>
-              <li><a href="https://psfx.com.br/pws/index.php/pws">Portal do cliente</a></li>
-              
-            </ul>
-          </div>
-          <div class="footer-col"> 
-            <h4>Redes sociais</h4>
-            <div class="social-links">
-              <a href="https://pt-br.facebook.com/csfdigital/" target="_blank"><i class="fa-brands fa-facebook" id="social-icons"></i></a>
-              <a href="https://www.instagram.com/csfdigital/" target="_blank"><i class="fa-brands fa-instagram"id="social-icons"></i></a>
-              <a href="https://br.linkedin.com/company/csfdigital"target="_blank"><i class="fa-brands fa-linkedin"id="social-icons"></i></a>
-
-            </div>
-           
-          </div>
-
-        </div>
-      </div>
-
-      <article onclick="backTop();">
-        <button class="scrollTop">
-        <img src="./src/img/seta-para-cima.png" alt="">
-      </button>
-  
-      </article>
-      <hr>
-      <div class="text-center mt-5" id="copyright">
-        <p>&copy; Copyright 2024 <a href="./index.html">CSF Digital.</a>Todos Os Direitos Reservados. Powered by Jordan Feliphe.</p>
-      </div>
-    </footer>
-    
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
-      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      window.addEventListener('scroll',function(){
-        let scroll=document.querySelector('.scrollTop')
-          scroll.classList.toggle('active',window.scrollY>450)
-      })
-      function backTop(){
-
-        window.scrollTo({
-          top:0,
-          behavior:'smooth'
-        })
-      }
-    </script>
-    <script>
-      const spinnerWrapperEl = document.querySelector(".spinner-wrapper");
-     window.addEventListener('load',() => {
-      spinnerWrapperEl.style.opacity = '0';
-      setTimeout(()=>{
-        spinnerWrapperEl.style.display = 'none'
-      },200);
-     });
-      
-     
-
-    </script>
-  </body>
 </html>
