@@ -11,15 +11,14 @@ body {
   line-height: 1.5;
   font-family: "Kozuka Gothic Pro 300", sans-serif;
 }
-#btn-dangerr{
-  background-color: #000000f0;
+#btn-dangerr {
+  background-color: #00000000;
   color: #bc3434;
 }
-#btn-dangerr:hover{
+#btn-dangerr:hover {
   background-color: #bc3434;
   color: #fdfdfd;
   transition: all 0.8s ease;
-  
 }
 
 .wrapper {
@@ -40,7 +39,7 @@ body {
   background-size: cover;
   background-position: center center;
 }
-#imgvenda1{
+#imgvenda1 {
   background-size: cover;
   background-position: center center;
 }
@@ -93,10 +92,15 @@ span.num {
   margin-top: 100px;
 }
 
+.nav-link {
+  color: #ffffff;
+}
 .nav-link:hover {
   color: #bc3434;
 }
-
+.dropdown-item:hover {
+  background-color: #bc3434a6;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -216,7 +220,7 @@ p {
   color: #bc3434;
   background-color: whitesmoke;
 }
-span{
+span {
   color: #bc3434;
 }
 .bg-img {
@@ -229,14 +233,14 @@ span{
   z-index: -2;
 }
 #imgindex {
-  height: 100vh;
+  height: 130vh;
   width: 100vw;
 }
 #overlay-index {
-  height: 100vh;
+  height: 130vh;
   width: 100vw;
 }
-#imgivendas{
+#imgivendas {
   height: 110vh;
   width: 100vw;
 }
@@ -274,7 +278,11 @@ span{
     linear-gradient(to top, rgba(0, 0, 0, 0.371), rgba(0, 0, 0, 0.152)),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.655), rgba(0, 0, 0, 0.892));
 }
-
+#overlay-tec {
+  background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
+    linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.145)),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.892));
+}
 .carousel-inner {
   height: 20em;
 }
