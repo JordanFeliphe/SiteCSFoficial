@@ -1,5 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/kozuka-gothic-pro");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,7 @@ body {
   overflow-x: hidden;
   font-family: "";
   line-height: 1.5;
-  font-family: "Kozuka Gothic Pro 300", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 #btn-dangerr {
   background-color: #00000000;
@@ -20,7 +21,9 @@ body {
   color: #fdfdfd;
   transition: all 0.8s ease;
 }
-
+svg{
+  margin-right: 10px;
+}
 .wrapper {
   border: 1px solid white;
   position: absolute;
@@ -236,6 +239,7 @@ span {
   left: 0;
   z-index: -2;
 }
+
 #imgindex {
   height: 130vh;
   width: 100vw;
@@ -245,11 +249,11 @@ span {
   width: 100vw;
 }
 #imgivendas {
-  height: 110vh;
+  height: 120vh;
   width: 100vw;
 }
 #overlay-vendas {
-  height: 110vh;
+  height: 120vh;
   width: 100vw;
 }
 .overlay {
@@ -272,11 +276,7 @@ span {
     linear-gradient(to top, rgb(0, 0, 0), rgba(208, 41, 41, 0.152)),
     linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(208, 41, 41, 0.152));
 }
-#overlay-index {
-  background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
-    linear-gradient(to top, rgb(0, 0, 0), rgba(208, 41, 41, 0.152)),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.892));
-}
+
 #overlay-nossosclientes {
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     linear-gradient(to top, rgba(0, 0, 0, 0.371), rgba(0, 0, 0, 0.152)),
@@ -481,6 +481,9 @@ textarea {
   #overlay-index {
     height: 120vh;
     width: 100vw;
+  }
+  #hoverpass{
+    margin-top: 10px;
   }
 }
 @media (max-width: 1280px) {
