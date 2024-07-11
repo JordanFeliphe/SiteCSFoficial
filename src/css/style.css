@@ -17,6 +17,13 @@ ul {
 .scrollTop {
   cursor: pointer;
 }
+#clienteexpo {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+#clienteexpo2 {
+  margin-top: 20px;
+}
 * {
   margin: 0;
   box-sizing: border-box;
@@ -49,10 +56,12 @@ svg {
 }
 #imgsection2,
 #imgvenda1,
-#sectionimg {
+#sectionimg,
+#clientimg {
   background-size: cover;
   background-position: center center;
 }
+
 .containerr {
   width: 28vmin;
   height: 28vmin;
@@ -89,10 +98,9 @@ i,
 span {
   color: #bc3434;
 }
-iframe{
-
- border-radius: 20px;
- height: 400px;
+iframe {
+  border-radius: 20px;
+  height: 400px;
 }
 .spinner-wrapper {
   top: 0;
@@ -215,6 +223,10 @@ p {
   top: 0;
   left: 0;
 }
+#justificado {
+  text-align: justify;
+  text-justify: inter-word;
+}
 .scrollTop.active {
   opacity: 1;
   visibility: visible;
@@ -240,6 +252,10 @@ p {
 #imgivendas,
 #overlay-vendas {
   height: 120vh;
+  width: 100vw;
+}
+#overlay-cliente {
+  height: 160vh;
   width: 100vw;
 }
 .overlay {

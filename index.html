@@ -2,365 +2,375 @@
 <html lang="pt-br" data-bs-theme="dark">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>CSF Digital - Soluções de impressão</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-	<link rel="stylesheet" href="./src/css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-	<script src="./src/js/scripts.js" defer></script>
-	<link rel="icon" type="image/png" href="./src/img/2c6f69bdf78de3fd1f47fe4231280559-_1_.ico">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSF Digital - Soluções de impressão</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script src="./src/js/scripts.js" defer></script>
+    <link rel="icon" type="image/png" href="./src/img/2c6f69bdf78de3fd1f47fe4231280559-_1_.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-	<div class="spinner-wrapper">
-		<div class="spinner-border text-light" role="status">
-			<span class="visually-hidden">Loading...</span>
-		</div>
-	</div>
-	<div class="overlay" id="overlay-index"></div>
-	<img class="bg-img img-fluid" src="./src/img/authentic-small-youthful-marketing-agency.webp" alt="bg-img" id="imgindex">
-	<nav class="navbar navbar-expand-lg  col-12 ">
-		<div class="container">
-			<!-- Imagem alinhada à esquerda -->
-			<a class="navbar-brand" href="./index.html">
-				<img src="./src/img/logo_black.webp" class="img-fluid mt-3" alt="csf" width="170px" height="120px" />
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<!-- Itens de navegação alinhados à direita -->
-			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-				<ul class="navbar-nav mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link " act aria-current="page" href="index.html"> <i class="fas fa-home"></i>Home</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-gear-fill"></i> Serviços </a>
-						<ul class="dropdown-menu">
-							<li>
-								<a class="dropdown-item" href="./vendaselocacoes.html">Vendas e Locações</a>
-							</li>
-							<li>
-								<a class="dropdown-item" href="./assistenciatecnica.html">Assistência técnica</a>
-							</li>
-							<li><a class="dropdown-item" href="./processosged.html">Processo de GED</a></li>
-							<li>
-								<a class="dropdown-item" href="./gerenciamento.html">Gerenciamento Impressão e cópia</a>
-							</li>
-							<li>
-								<a class="dropdown-item" href="./impressaocomdadosvariaveis.html">Impressão com variáveis</a>
-							</li>
-							<li>
-								<a class="dropdown-item" href="./divisaografica.html">Divisão gráfica (Serviços internos)</a>
-							</li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-globe"></i> Intranet </a>
-						<ul class="dropdown-menu">
-							<li>
-								<a class="dropdown-item" href="https://www.csfdigital.com.br/hesk/" target="_blank">Hesk</a>
-							</li>
-							<li><a class="dropdown-item" href="https://csfdigital.com.br/contatos/" target="_blank">Contatos(Interno)</a></li>
-							<li>
-								<a class="dropdown-item" href="http://ws.csfdigital.corp:9292/Account/Login.aspx?ReturnUrl=%2f" target="_blank">PPS (Interno)</a>
-							</li>
-							<li>
-								<a class="dropdown-item" href="http://177.19.130.212:9292/Account/Login.aspx?ReturnUrl=%2" target="_blank">PPS (Externo)</a>
-							</li>
-							<li><a class="dropdown-item" href="http://db02.csfdigital.corp:8484/reports/browse/" target="_blank">Report(Interno)</a></li>
-							<li><a class="dropdown-item" href="http://177.19.130.212:8484/reports/browse/" target="_blank">Report(Externo)</a></li>
-							
-						</ul>
-					</li>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-file-earmark-text-fill"></i> Sobre </a>
-						<ul class="dropdown-menu">
-							<li>
-								<a class="dropdown-item" href="./localizacaoFOR.html">Localização CSF Fortaleza</a>
-							</li>
-							<li><a class="dropdown-item" href="./localizacaoSLZ.html">Localização CSF São Luis</a></li>
-						</ul>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./contato.html"><i class="bi bi-telephone-fill"></i>Contato</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./areadocliente.html"><i class="bi bi-person-lines-fill"></i>Área do cliente</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<header class="container mt-3">
-		<div class="row">
-			<div class="col-12 col-lg-6 order-lg-2">
-			</div>
-			<div class="col-12 col-lg-6 order-lg-1 ml-5">
-				<div class="mt-personalizada">
-					<h1 class="text-center text-md-start"> Nós somos a <b><span class="text">CSF Digital</span></b>
+    <div class="spinner-wrapper">
+        <div class="spinner-border text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <div class="overlay" id="overlay-index"></div>
+    <img class="bg-img img-fluid" src="./src/img/authentic-small-youthful-marketing-agency.webp" alt="bg-img" id="imgindex">
+    <nav class="navbar navbar-expand-lg  col-12 ">
+        <div class="container">
+            <!-- Imagem alinhada à esquerda -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./src/img/logo_black.webp" class="img-fluid mt-3" alt="csf" width="170px" height="120px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Itens de navegação alinhados à direita -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " act aria-current="page" href="index.html"> <i class="fas fa-home"></i>Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-gear-fill"></i> Serviços </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="./vendaselocacoes.html">Vendas e Locações</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./assistenciatecnica.html">Assistência técnica</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./processosged.html">Processo de GED</a></li>
+                            <li>
+                                <a class="dropdown-item" href="./gerenciamento.html">Gerenciamento Impressão e cópia</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./impressaocomdadosvariaveis.html">Impressão com variáveis</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./divisaografica.html">Divisão gráfica (Serviços internos)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-globe"></i> Intranet </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="https://www.csfdigital.com.br/hesk/" target="_blank">Hesk</a>
+                            </li>
+                            <li><a class="dropdown-item" href="https://csfdigital.com.br/contatos/" target="_blank">Contatos(Interno)</a></li>
+                            <li>
+                                <a class="dropdown-item" href="http://ws.csfdigital.corp:9292/Account/Login.aspx?ReturnUrl=%2f" target="_blank">PPS (Interno)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="http://177.19.130.212:9292/Account/Login.aspx?ReturnUrl=%2" target="_blank">PPS (Externo)</a>
+                            </li>
+                            <li><a class="dropdown-item" href="http://db02.csfdigital.corp:8484/reports/browse/" target="_blank">Report(Interno)</a></li>
+                            <li><a class="dropdown-item" href="http://177.19.130.212:8484/reports/browse/" target="_blank">Report(Externo)</a></li>
+
+                        </ul>
+                    </li>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-file-earmark-text-fill"></i> Sobre </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="./localizacaoFOR.html">Localização CSF Fortaleza</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./localizacaoSLZ.html">Localização CSF São Luis</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contato.html"><i class="bi bi-telephone-fill"></i>Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./areadocliente.html"><i class="bi bi-person-lines-fill"></i>Área do cliente</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="container mt-3">
+        <div class="row">
+            <div class="col-12 col-lg-6 order-lg-2">
+            </div>
+            <div class="col-12 col-lg-6 order-lg-1 ml-5">
+                <div class="mt-personalizada">
+                    <h1 class="text-center text-md-start"> Nós somos a <b><span class="text">CSF Digital</span></b>
 					</h1>
-				</div>
-				<p class="lead text-muted text-md-start text-justify col-12"> Somos líderes em soluções de impressão e documentos digitais, atendendo tanto o mercado corporativo quanto governamental. Com técnicos residentes em todos os estados do Nordeste do Brasil, garantimos um suporte local eficiente e ágil. Nosso amplo contrato de outsourcing no setor bancário nos posiciona como um dos maiores players do segmento, refletindo nossa expertise e compromisso com a excelência. Escolha-nos para transformar sua gestão documental com a confiança de quem lidera o mercado. </p>
-				<div class="mt-4 text-center text-md-start mt-personalizada_bottom">
-					<a href="./contato.html"> <button type="button" class="btn btn-danger btn-lg" id="btn-dangerr"> Contratar </button></a>
-					<a href="./nossosclientes.html">
-						<button type="button" class="btn btn-outline-secondary btn-lg"> Conheça nossos clientes </button>
-					</a>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-				</div>
-			</div>
-	</header>
-	
-	<section class="container-fluid" style="background-image: url('./src/img/black-cubes-background-abstract.webp');">
-		<div class="container px-4 py-5" id="icon-grid">
-			<h2 class="pb-3 border-bottom"><b><span>Soluções Completas</span></b> em Impressão e Gestão de Documentos</h2>
-			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-				<div class="col d-flex align-items-start">
-					<svg xmlns="http://www.w3.org/2000/svg text-body-secondary flex-shrink-0 me-3" style="color:#bc3434" width="1.75em" height="1.75em" fill="currentColor" fill="currentColor" class="bi bi-box-fill" viewBox="0 0 16 16">
-						<path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z" />
-					</svg>
-					<div>
-						<h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Vendas e Locações</h3>
-						<p>Oferecemos impressoras e multifuncionais para venda e locação.</p>
-					</div>
-				</div>
-				<div class="col d-flex align-items-start">
-					<svg xmlns="http://www.w3.org/2000/svg text-body-secondary flex-shrink-0 me-3" style="color:#bc3434" width="1.75em" height="1.75em" fill="currentColor" class="bi bi-printer-fill" viewBox="0 0 16 16">
-						<path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1" />
-						<path d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1" />
-					</svg>
-					<div>
-						<h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Equipamentos</h3>
-						<p>Fornecemos equipamentos, toners e peças de reposição. </p>
-					</div>
-				</div>
-				<div class="col d-flex align-items-start">
-					<svg xmlns="http://www.w3.org/2000/svg text-body-secondary flex-shrink-0 me-3" style="color:#bc3434" width="1.75em" height="1.75em" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
-						<path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
-					</svg>
-					<div>
-						<h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Assistência Técnica</h3>
-						<p>Técnicos certificados para manutenção e suporte especializado.</p>
-					</div>
-				</div>
-				<div class="col d-flex align-items-start">
-					<svg xmlns="http://www.w3.org/2000/svg text-body-secondary flex-shrink-0 me-3" style="color:#bc3434" width="1.75em" height="1.75em" fill="currentColor" class="bi bi-file-earmark-break-fill" viewBox="0 0 16 16">
-						<path d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V9H2V2a2 2 0 0 1 2-2m5.5 1.5v2a1 1 0 0 0 1 1h2zM2 12h12v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zM.5 10a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1z" />
-					</svg>
-					<div>
-						<h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Gestão DOC</h3>
-						<p>Digitalização e gerenciamento eletrônico para acesso rápido a documentos.</p>
-					</div>
-				</div>
-				<div class="col d-flex align-items-start">
-					<svg xmlns="http://www.w3.org/2000/svg text-body-secondary flex-shrink-0 me-3" style="color:#bc3434" width="1.75em" height="1.75em" fill="currentColor" class="bi bi-kanban-fill" viewBox="0 0 16 16">
-						<path d="M2.5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm5 2h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1m-5 1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1zm9-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1" />
-					</svg>
-					<div>
-						<h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Gerenciamento</h3>
-						<p>Soluções para contabilização e monitoramento de impressões via WEB.</p>
-					</div>
-				</div>
-				<div class="col d-flex align-items-start">
-					<svg xmlns="http://www.w3.org/2000/svg text-body-secondary flex-shrink-0 me-3" style="color:#bc3434" width="1.75em" height="1.75em" fill="currentColor" class="bi bi-clipboard-data-fill" viewBox="0 0 16 16">
-						<path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z" />
-						<path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zM10 8a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm4-3a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1" />
-					</svg>
-					<div>
-						<h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Dados Variáveis</h3>
-						<p>Produção de boletos, carnês e malas diretas personalizadas.</p>
-					</div>
-				</div>
-				<div class="col d-flex align-items-start">
-					<svg xmlns="http://www.w3.org/2000/svg" style="color:#bc3434" width="1.75em" height="1.75em" fill="currentColor" class="bi bi-person-vcard-fill" viewBox="0 0 16 16">
-						<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-					  </svg>
-					<div>
-						<h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Divisão Gráfica</h3>
-						<p>Serviços de produção gráfica digital com equipe de diagramadores.</p>
-					</div>
-				</div>
-				<div class="col d-flex align-items-start">
-					<svg xmlns="http://www.w3.org/2000/svg text-body-secondary flex-shrink-0 me-3" style="color:#bc3434" width="1.75em" height="1.75em" fill="currentColor" class="bi bi-building-fill" viewBox="0 0 16 16">
-						<path d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V16h3a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm1 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5" />
-					</svg>
-					<div>
-						<h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Consultoria</h3>
-						<p>Otimização e economia para sua infraestrutura de impressão.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container px-4 py-5" id="custom-cards">
-			<h2 class="pb-2 border-bottom"><b><span>Transforme seu Negócio</span></b> com Soluções de Documentação de Alto Desempenho</h2>
-			<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-				<div class="col">
-					<div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="imgsection2" style="background-image: url('./src/img/side-view-woman-using-printer.webp');">
-						<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Serviços de <span>excelência</span> que superam expectativas.</h3>
-							<ul class="d-flex list-unstyled mt-auto">
-								<li class="me-auto">
-									<img src="./src/img/logo_black.webp" alt="Bootstrap" width="80" height="50">
-								</li>
-								<li class="d-flex align-items-center me-3">
-									<svg class="bi me-2" width="1em" height="1em">
-										<use xlink:href="#geo-fill" />
-									</svg>
-									<small>Serviços:</small>
-								</li>
-								<li class="d-flex align-items-center">
-									<svg class="bi me-2" width="1em" height="1em">
-										<use xlink:href="#calendar3" />
-									</svg>
-									<small><span>+100 mil</span></small>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="imgsection2" style="background-image: url('./src/img/impressoes.webp');">
-						<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><span>1 bilhão</span> de impressões com excelência e qualidade.</h3>
-							<ul class="d-flex list-unstyled mt-auto">
-								<li class="me-auto">
-									<img src="./src/img/logo_black.webp" alt="Bootstrap" width="80" height="50">
-								</li>
-								<li class="d-flex align-items-center me-3">
-									<svg class="bi me-2" width="1em" height="1em">
-										<use xlink:href="#geo-fill" />
-									</svg>
-									<small>Clientes:</small>
-								</li>
-								<li class="d-flex align-items-center">
-									<svg class="bi me-2" width="1em" height="1em">
-										<use xlink:href="#calendar3" />
-									</svg>
-									<small><span>+70</span></small>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="imgsection2" style="background-image: url('./src/img/two-businessmen-shaking-hands-as-sign-agreement.webp');">
-						<div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Parceiros são <span>essenciais</span> para o nosso sucesso.</h3>
-							<ul class="d-flex list-unstyled mt-auto">
-								<li class="me-auto">
-									<img src="./src/img/logo_black.webp" alt="Bootstrap" width="80" height="50">
-								</li>
-								<li class="d-flex align-items-center me-3">
-									<svg class="bi me-2" width="1em" height="1em">
-										<use xlink:href="#geo-fill" />
-									</svg>
-									<small>Parceiros</small>
-								</li>
-								<li class="d-flex align-items-center">
-									<svg class="bi me-2" width="1em" height="1em">
-										<use xlink:href="#calendar3" />
-									</svg>
-									<small><span>+40</span></small>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer class="footer">
-		<div class="container-footer">
-			<div class="row">
-				<div class="footer-col">
-					<h4>CSF Digital - São Luís</h4>
-					<ul>
-						<li><a href="mailto:comercial@csfdigital.com.br"><i class="fa-solid fa-envelope"></i>comercial@csfdigital.com.br</a></li>
-						<li><a href="#"><i class="fa-solid fa-phone"></i>(98) 3301-2400</a></li>
-						<li><a href="#"><i class="fa-solid fa-clock"></i>08:00 às 12:30 | 13:30 às 18:00</a></li>
-						<li><a href="https://maps.app.goo.gl/wSM857DbcmVR6btE9" target="_blank"><i class="fa-solid fa-location-dot"></i>Av. dos Holandeses, Qda. 32, Nº 1, Ed. Praia Shopping | Loja 12, pavimento superior, - Calhau, São Luís-MA, Cep: 65071-380</a></li>
-					</ul>
-				</div>
-				<div class="footer-col">
-					<h4>CSF Digital - Fortaleza</h4>
-					<ul>
-						<li><a href="mailto:comercial@csfdigital.com.br"><i class="fa-solid fa-envelope"></i>comercial@csfdigital.com.br</a></li>
-						<li><a href="#"><i class="fa-solid fa-phone"></i>(85) 3022-0900</a></li>
-						<li><a href="#"><i class="fa-solid fa-clock"></i>08:00 às 12:30 | 13:30 às 18:00</a></li>
-						<li><a href="https://maps.app.goo.gl/uNtnCF7mnA9jyPDcA" target="_blank"><i class="fa-solid fa-location-dot"></i>Rua Raimundo Oliveira Filho, Nº 332 - Papicu, Fortaleza-CE. CEP: 60175-175</a></li>
-					</ul>
-				</div>
-				<div class="footer-col">
-					<h4>Menu</h4>
-					<ul>
-						<li><a href="./index.html">Home</a></li>
-						<li><a href="#">Sobre</a></li>
-						<li><a href="./contato.html">Contato</a></li>
-						<li><a href="https://psfx.com.br/pws/index.php/pws">Portal do cliente</a></li>
-					</ul>
-				</div>
-				<div class="footer-col">
-					<h4>Redes sociais</h4>
-					<div class="social-links">
-						<a href="https://pt-br.facebook.com/csfdigital/" target="_blank"><i class="fa-brands fa-facebook" id="social-icons"></i></a>
-						<a href="https://www.instagram.com/csfdigital/" target="_blank"><i class="fa-brands fa-instagram" id="social-icons"></i></a>
-						<a href="https://br.linkedin.com/company/csfdigital" target="_blank"><i class="fa-brands fa-linkedin" id="social-icons"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<article onclick="backTop();">
-			<button class="scrollTop">
-				<img src="./src/img/seta-para-cima.webp" alt="">
-			</button>
-		</article>
-		<hr>
-		<div class="text-center mt-5" id="copyright">
-			<p>&copy; Copyright 2024 <a href="./index.html">CSF Digital.</a>Todos Os Direitos Reservados. Powered by Jordan Feliphe.</p>
-		</div>
-	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-	<script>
-		window.addEventListener('scroll', function() {
-		    let scroll = document.querySelector('.scrollTop')
-		    scroll.classList.toggle('active', window.scrollY > 450)
-		})
-		
-		function backTop() {
-		
-		    window.scrollTo({
-		        top: 0,
-		        behavior: 'smooth'
-		    })
-		}
-	</script>
-	<script>
-		const spinnerWrapperEl = document.querySelector(".spinner-wrapper");
-		window.addEventListener('load', () => {
-		    spinnerWrapperEl.style.opacity = '0';
-		    setTimeout(() => {
-		        spinnerWrapperEl.style.display = 'none'
-		    }, 200);
-		});
-	</script>
-	
+                </div>
+                <p class="lead text-muted  col-12" id="justificado"> Somos líderes em soluções de impressão e documentos digitais, atendendo tanto o mercado corporativo quanto governamental. Com técnicos residentes em todos os estados do Nordeste do Brasil, garantimos um suporte local eficiente e ágil.
+                    Nosso amplo contrato de outsourcing no setor bancário nos posiciona como um dos maiores players do segmento, refletindo nossa expertise e compromisso com a excelência. Escolha-nos para transformar sua gestão documental com a confiança
+                    de quem lidera o mercado. </p>
+                <div class="mt-4 text-center text-md-start mt-personalizada_bottom">
+                    <a href="./contato.html">
+                        <button type="button" class="btn btn-danger btn-lg" id="btn-dangerr"> Contratar </button>
+                    </a>
+                    <a href="./nossosclientes.html">
+                        <button type="button" class="btn btn-outline-secondary btn-lg"> Conheça nossos clientes </button>
+                    </a>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+    </header>
+
+    <section class="container-fluid" style="background-image: url('./src/img/black-cubes-background-abstract.webp');">
+        <div class="container px-4 py-5" id="icon-grid">
+            <h2 class="pb-3 border-bottom"><b><span>Soluções Completas</span></b> em Impressão e Gestão de Documentos</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+                <div class="col d-flex align-items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg text-body-secondary flex-shrink-0 me-3" style="color:#bc3434" width="1.75em" height="1.75em" fill="currentColor" fill="currentColor" class="bi bi-box-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z"
+                        />
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Vendas e Locações</h3>
+                        <p>Oferecemos impressoras e multifuncionais para venda e locação.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg text-body-secondary flex-shrink-0 me-3" style="color:#bc3434" width="1.75em" height="1.75em" fill="currentColor" class="bi bi-printer-fill" viewBox="0 0 16 16">
+                        <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1" />
+                        <path d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1" />
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Equipamentos</h3>
+                        <p>Fornecemos equipamentos, toners e peças de reposição. </p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg text-body-secondary flex-shrink-0 me-3" style="color:#bc3434" width="1.75em" height="1.75em" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                        <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"
+                        />
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Assistência Técnica</h3>
+                        <p>Técnicos certificados para manutenção e suporte especializado.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg text-body-secondary flex-shrink-0 me-3" style="color:#bc3434" width="1.75em" height="1.75em" fill="currentColor" class="bi bi-file-earmark-break-fill" viewBox="0 0 16 16">
+                        <path d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V9H2V2a2 2 0 0 1 2-2m5.5 1.5v2a1 1 0 0 0 1 1h2zM2 12h12v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zM.5 10a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1z" />
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Gestão DOC</h3>
+                        <p>Digitalização e gerenciamento eletrônico para acesso rápido a documentos.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg text-body-secondary flex-shrink-0 me-3" style="color:#bc3434" width="1.75em" height="1.75em" fill="currentColor" class="bi bi-kanban-fill" viewBox="0 0 16 16">
+                        <path d="M2.5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm5 2h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1m-5 1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1zm9-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1"
+                        />
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Gerenciamento</h3>
+                        <p>Soluções para contabilização e monitoramento de impressões via WEB.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg text-body-secondary flex-shrink-0 me-3" style="color:#bc3434" width="1.75em" height="1.75em" fill="currentColor" class="bi bi-clipboard-data-fill" viewBox="0 0 16 16">
+                        <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z" />
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zM10 8a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm4-3a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1"
+                        />
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Dados Variáveis</h3>
+                        <p>Produção de boletos, carnês e malas diretas personalizadas.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="color:#bc3434" width="1.75em" height="1.75em" fill="currentColor" class="bi bi-person-vcard-fill" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"
+                        />
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Divisão Gráfica</h3>
+                        <p>Serviços de produção gráfica digital com equipe de diagramadores.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg text-body-secondary flex-shrink-0 me-3" style="color:#bc3434" width="1.75em" height="1.75em" fill="currentColor" class="bi bi-building-fill" viewBox="0 0 16 16">
+                        <path d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V16h3a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm1 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5"
+                        />
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Consultoria</h3>
+                        <p>Otimização e economia para sua infraestrutura de impressão.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom"><b><span>Transforme seu Negócio</span></b> com Soluções de Documentação de Alto Desempenho</h2>
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="imgsection2" style="background-image: url('./src/img/side-view-woman-using-printer.webp');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Serviços de <span>excelência</span> que superam expectativas.</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="./src/img/logo_black.webp" alt="Bootstrap" width="80" height="50">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill" />
+                                    </svg>
+                                    <small>Serviços:</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3" />
+                                    </svg>
+                                    <small><span><b>+100 mil</b></span></small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="imgsection2" style="background-image: url('./src/img/impressoes.webp');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><span>1 bilhão</span> de impressões com excelência e qualidade.</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="./src/img/logo_black.webp" alt="Bootstrap" width="80" height="50">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill" />
+                                    </svg>
+                                    <small>Clientes:</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3" />
+                                    </svg>
+                                    <small><span><b>+70</b></span></small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="imgsection2" style="background-image: url('./src/img/two-businessmen-shaking-hands-as-sign-agreement.webp');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Parceiros são <span>essenciais</span> para o nosso sucesso.</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="./src/img/logo_black.webp" alt="Bootstrap" width="80" height="50">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill" />
+                                    </svg>
+                                    <small>Parceiros</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3" />
+                                    </svg>
+                                    <small><span><b>+40</b></span></small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>CSF Digital - São Luís</h4>
+                    <ul>
+                        <li><a href="mailto:comercial@csfdigital.com.br"><i class="fa-solid fa-envelope"></i>comercial@csfdigital.com.br</a></li>
+                        <li><a href="#"><i class="fa-solid fa-phone"></i>(98) 3301-2400</a></li>
+                        <li><a href="#"><i class="fa-solid fa-clock"></i>08:00 às 12:30 | 13:30 às 18:00</a></li>
+                        <li><a href="https://maps.app.goo.gl/wSM857DbcmVR6btE9" target="_blank"><i class="fa-solid fa-location-dot"></i>Av. dos Holandeses, Qda. 32, Nº 1, Ed. Praia Shopping | Loja 12, pavimento superior, - Calhau, São Luís-MA, Cep: 65071-380</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CSF Digital - Fortaleza</h4>
+                    <ul>
+                        <li><a href="mailto:comercial@csfdigital.com.br"><i class="fa-solid fa-envelope"></i>comercial@csfdigital.com.br</a></li>
+                        <li><a href="#"><i class="fa-solid fa-phone"></i>(85) 3022-0900</a></li>
+                        <li><a href="#"><i class="fa-solid fa-clock"></i>08:00 às 12:30 | 13:30 às 18:00</a></li>
+                        <li><a href="https://maps.app.goo.gl/uNtnCF7mnA9jyPDcA" target="_blank"><i class="fa-solid fa-location-dot"></i>Rua Raimundo Oliveira Filho, Nº 332 - Papicu, Fortaleza-CE. CEP: 60175-175</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                        <li><a href="./areadocliente.html">Área do cliente</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes sociais</h4>
+                    <div class="social-links">
+                        <a href="https://pt-br.facebook.com/csfdigital/" target="_blank"><i class="fa-brands fa-facebook" id="social-icons"></i></a>
+                        <a href="https://www.instagram.com/csfdigital/" target="_blank"><i class="fa-brands fa-instagram" id="social-icons"></i></a>
+                        <a href="https://br.linkedin.com/company/csfdigital" target="_blank"><i class="fa-brands fa-linkedin" id="social-icons"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <article onclick="backTop();">
+            <button class="scrollTop">
+                <img src="./src/img/seta-para-cima.webp" alt="">
+            </button>
+        </article>
+        <hr>
+        <div class="text-center mt-5" id="copyright">
+            <p>&copy; Copyright 2024 <a href="./index.html">CSF Digital.</a>Todos Os Direitos Reservados. Powered by Jordan Feliphe.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+        		    let scroll = document.querySelector('.scrollTop')
+        		    scroll.classList.toggle('active', window.scrollY > 450)
+        		})
+        		
+        		function backTop() {
+        		
+        		    window.scrollTo({
+        		        top: 0,
+        		        behavior: 'smooth'
+        		    })
+        		}
+    </script>
+    <script>
+        const spinnerWrapperEl = document.querySelector(".spinner-wrapper");
+        		window.addEventListener('load', () => {
+        		    spinnerWrapperEl.style.opacity = '0';
+        		    setTimeout(() => {
+        		        spinnerWrapperEl.style.display = 'none'
+        		    }, 200);
+        		});
+    </script>
+
 </body>
 
 </html>
