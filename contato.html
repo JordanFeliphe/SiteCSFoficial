@@ -10,6 +10,14 @@
         <script src="./src/js/scripts.js" defer></script>
         <link rel="icon" type="image/png" href="./src/img/2c6f69bdf78de3fd1f47fe4231280559-_1_.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" />
+        <script src="./src/js/index.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function () {
+            emailjs.init("ImFnptkKg1v76a_Rm");
+        })();
+        </script>
+        
     </head>
     <body>
         <div class="spinner-wrapper">
@@ -115,22 +123,39 @@
                         <h1 class="text-center text-md-start" id="contato-perssonalizado">
                             Simplifique suas <b><span class="text">impressões</span></b>
                         </h1>
+                        <p class="lead text-muted text-md-start text-justify col-12">
+                            envie um e-mail para nós e descubra nossas soluções!
+                        </p>
                     </div>
+                    <div  class="form" id="contact-form" >
+                        <div class="form-group">
+    
+                            <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            placeholder="Digite seu nome..." required
+                            />
+                        </div>
+                        <div class="form-group">
+                            
+                            <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="Digite o seu e-mail..." required
+                            />
+                        </div>
+                        <div class="form-group">
+                            
+                            <textarea class="form-control" id="message" rows="3" placeholder="Digite a sua mensagem..." required></textarea>
+                        </div>
+                        <button class="btn btn-" onclick="sendMail()" id="sendButton">Enviar</button>
+                        </div>
+                    
 
-                    <p class="lead text-muted text-md-start text-justify col-12">
-                        envie um e-mail para nós e descubra nossas soluções!
-                    </p>
-                    <form action="https://formsubmit.co/contato@csfdigital.com.br" method="POST" class="form" id="contact-form">
-                        <input type="hidden" name="_next" value="https://jordanfeliphe.github.io/SiteCSFoficial/thanksemail.html" />
-                        <input type="hidden" name="_autoresponse" value="Obrigado por enviar um e-mail para nós, em breve entraremos em contato com você!" />
-                        <input type="hidden" name="_captcha" value="false" />
-                        <input type="text" name="name" placeholder="Seu nome..." required />
-                        <input type="email" name="email" placeholder="Seu e-mail..." required />
-                        <textarea name="message" placeholder="Digite a sua mensagem..." required></textarea>
-                        <button type="submit" class="btn btn-light" id="submit-button">
-                            Enviar e-mail
-                        </button>
-                    </form>
+                    
+                    
                     <br />
                     <br />
                     <br />
